@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Простейший чат</title>
+  </head>
+  <body>
+    <h2>Простейший чат</h2>
+    <div>
+      <label>
+        Введите доступный вам токен и нажмите enter
+        <input type="text" placeholder="Введите токен" id="name_input" >
+      </label>
+    </div>
+    <script>
+      document.getElementById("name_input").addEventListener('keypress', (e) => {
+        if (e.keyCode == 13) {
+          location.href = `/chat.html?access_token=${e.target.value}`;
+        }
+      } )
+    </script>
+  </body>
+</html>

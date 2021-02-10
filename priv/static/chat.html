@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Простейший чат</title>
+    <script type="application/javascript" defer="defer" src="application.js"></script>
+  </head>
+  <body>
+    <h2>Простейший чат</h2>
+    <div id="message_box">
+      Комната: <input id="message_box_room_input" type="text" style="width:100px" value="init" />
+      <button id="message_box_join_button" onclick="joinRoom()">join room</button>
+      <button id="message_box_create_button" onclick="createRoom()">create room</button>
+      <br/>
+
+      Сообщения: <input id="message_box_input" type="text" style="width:400px" />
+      <button id="message_box_send_button" onclick="sendMessage()">send message</button>
+    </div>
+
+    <div id="output"></div>
+  </body>
+</html>
